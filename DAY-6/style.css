@@ -1,0 +1,300 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fbfaf5;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section, footer {
+    scroll-margin-top: 75px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: #24543d;
+    padding: 16px 0;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    color: #f8fbf9 !important;
+}
+
+.nav-link {
+    color:  #f8fbf9 !important;
+    margin-left: 15px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #17eb53 !important;
+}
+
+.cart-label {
+    color: white;
+    font-weight: bold;
+}
+
+/* Home section */
+.hero {
+    padding: 65px 0;
+    background: linear-gradient(120deg, #e8f0df, #faf8ee);
+}
+
+.subtitle {
+    color: #55814e;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #24543d;
+    margin: 15px 0;
+}
+
+.hero-text {
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 500px;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 390px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px #00000015;
+}
+
+/* Buttons */
+.main-btn {
+    background-color: #24543d;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    background-color: #3c7955;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Common section spacing */
+.section-padding {
+    padding: 65px 0;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-heading h2,
+#about h2 {
+    font-family: Georgia, serif;
+    color: #24543d;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+/* Product cards */
+.product-card {
+    border: 1px solid #e5e5d9;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px #00000012;
+}
+
+.product-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.product-card .card-body {
+    padding: 20px 15px;
+}
+
+.product-card h5 {
+    color: #24543d;
+    font-weight: bold;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+    min-height: 42px;
+}
+
+.price {
+    margin: 15px 0;
+}
+
+.product-btn {
+    background-color: #e7f0df;
+    color: #24543d;
+    border-radius: 25px;
+    width: 100%;
+    font-weight: bold;
+}
+
+.product-btn:hover {
+    background-color: #24543d;
+    color: white;
+}
+
+/* Benefits section */
+.benefits {
+    padding: 45px 0;
+    background-color: #edf3e6;
+}
+
+.benefit-icon {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+.benefits h5 {
+    color: #24543d;
+    font-weight: bold;
+}
+
+.benefits p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* About section */
+.about-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+#about p {
+    line-height: 1.8;
+}
+
+/* Enquiry section */
+.enquiry-section {
+    background-color: #edf3e6;
+}
+
+.enquiry-box {
+    max-width: 750px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #0000000c;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border: 1px solid #d7dfd0;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #55814e;
+    box-shadow: 0 0 5px #55814e40;
+}
+
+.form-label {
+    color: #24543d;
+    font-weight: bold;
+}
+
+#formMessage {
+    color: #24543d;
+    font-weight: bold;
+}
+
+/* Footer and contact details */
+footer {
+    background-color: #193e2d;
+    color: white;
+    padding: 45px 0 20px;
+}
+
+footer h4,
+footer h5 {
+    margin-bottom: 18px;
+    color: #d5e9c3;
+}
+
+footer p {
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+footer a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #c9e8a8;
+}
+
+footer hr {
+    border-color: #ffffff60;
+    margin-top: 30px;
+}
+
+/* Mobile screen adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-image {
+        max-height: 300px;
+    }
+
+    .section-padding {
+        padding: 45px 0;
+    }
+
+    .section-heading h2,
+    #about h2 {
+        font-size: 28px;
+    }
+
+    .enquiry-box {
+        padding: 20px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+}

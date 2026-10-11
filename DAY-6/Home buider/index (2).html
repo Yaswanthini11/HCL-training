@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BuildRight Homes | Properties & Home Builders</title>
+  <!-- Bootstrap CSS (from CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Our own CSS (loaded AFTER Bootstrap so it can override it) -->
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- 1. NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#home">🏠 BuildRight Homes</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#properties">Properties</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 2. HERO -->
+  <header id="home" class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="display-4 fw-bold">Find or Build Your Dream Home</h1>
+      <p class="lead">Quality construction and the best properties, all in one place.</p>
+      <a href="#properties" class="btn btn-warning btn-lg me-2">View Properties</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- 3. SERVICES -->
+  <section id="services" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Our Services</h2>
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="icon">🏗️</div>
+            <h5>Home Construction</h5>
+            <p>Custom homes built from the ground up to your design.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="icon">🔨</div>
+            <h5>Renovation</h5>
+            <p>Modernize your kitchen, bathrooms, or the whole house.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm p-4">
+            <div class="icon">🔑</div>
+            <h5>Property Sales</h5>
+            <p>Buy or sell verified plots, apartments, and villas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PROPERTIES (filtered with JavaScript) -->
+  <section id="properties" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Featured Properties</h2>
+
+      <div class="text-center mb-4" id="filters">
+        <button class="btn btn-dark active" data-filter="all">All</button>
+        <button class="btn btn-outline-dark" data-filter="villa">Villas</button>
+        <button class="btn btn-outline-dark" data-filter="apartment">Apartments</button>
+        <button class="btn btn-outline-dark" data-filter="plot">Plots</button>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4 property" data-type="villa">
+          <div class="card shadow-sm">
+            <div class="img-box">🏡</div>
+            <div class="card-body">
+              <h5>Green Valley Villa</h5>
+              <p class="text-muted mb-1">4 Bed · 3 Bath · 2,400 sq ft</p>
+              <p class="price">$320,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 property" data-type="apartment">
+          <div class="card shadow-sm">
+            <div class="img-box">🏢</div>
+            <div class="card-body">
+              <h5>City Heights Apartment</h5>
+              <p class="text-muted mb-1">2 Bed · 2 Bath · 1,100 sq ft</p>
+              <p class="price">$140,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 property" data-type="plot">
+          <div class="card shadow-sm">
+            <div class="img-box">🌳</div>
+            <div class="card-body">
+              <h5>Lakeside Plot</h5>
+              <p class="text-muted mb-1">5,000 sq ft · Ready to build</p>
+              <p class="price">$60,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 property" data-type="villa">
+          <div class="card shadow-sm">
+            <div class="img-box">🏠</div>
+            <div class="card-body">
+              <h5>Palm Grove Villa</h5>
+              <p class="text-muted mb-1">3 Bed · 2 Bath · 1,900 sq ft</p>
+              <p class="price">$250,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 property" data-type="apartment">
+          <div class="card shadow-sm">
+            <div class="img-box">🏬</div>
+            <div class="card-body">
+              <h5>Skyline Residency</h5>
+              <p class="text-muted mb-1">3 Bed · 2 Bath · 1,450 sq ft</p>
+              <p class="price">$185,000</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 property" data-type="plot">
+          <div class="card shadow-sm">
+            <div class="img-box">🌄</div>
+            <div class="card-body">
+              <h5>Hilltop Plot</h5>
+              <p class="text-muted mb-1">8,000 sq ft · Scenic view</p>
+              <p class="price">$95,000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ABOUT + COUNTERS -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2>About Us</h2>
+      <p class="mx-auto mb-5" style="max-width:650px">
+        For over 15 years, BuildRight Homes has helped families build, buy, and renovate homes
+        with honest pricing, quality materials, and on-time delivery.
+      </p>
+      <div class="row">
+        <div class="col-4"><div class="stat" data-target="250">0</div><p>Homes Built</p></div>
+        <div class="col-4"><div class="stat" data-target="15">0</div><p>Years Experience</p></div>
+        <div class="col-4"><div class="stat" data-target="98">0</div><p>% Happy Clients</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. CONTACT FORM -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container" style="max-width:600px">
+      <h2 class="text-center mb-4">Contact Us</h2>
+      <form id="contactForm" novalidate>
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" id="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">I'm interested in</label>
+          <select id="interest" class="form-select">
+            <option>Building a home</option>
+            <option>Buying a property</option>
+            <option>Renovation</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea id="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Send Message</button>
+        <div id="formMsg" class="mt-3"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER -->
+  <footer class="bg-dark text-white text-center py-3">
+    <small>© 2026 BuildRight Homes. All rights reserved.</small>
+  </footer>
+
+  <!-- Bootstrap JS (needed for the mobile menu), then our own JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dbms.css">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align:end;">
+        <nav href="#yas" style="display: inline;">HOME || </nav>
+        <nav href="#sas" style="display: inline; ">CONTACT || </nav>
+        <button href="#ys" style="display: inline;">VIEW STUDENTS</button>
+    </div>
+    <center>
+    <table>
+        <form id="userForm">
+        <tr>
+            <td><label>ENTER STUDENT NAME:</label></td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td><label>ENTER REG NO.:</label></td>
+            <td><input type="number" id="reg"></td>
+        </tr>
+        <tr>
+            <td><label>ENTER STUDENT DEPT:</label></td>
+            <td><input type="text" id="dept"></td>
+        </tr>
+        <tr>
+            <td><label>ENTER STUDENT EMAIL:</label></td>
+            <td><input type="text" id="mail"></td>
+        </tr>
+        <tr>
+            <td><label>ENTER PHN NO.:</label></td>
+            <td><input type="number" id="ph"></td>
+        </tr>
+        <tr>
+            <td><label>ENTER CGPA:</label></td>
+            <td><input type="number" id="gpa"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button type="button" style="width: 85px;" onclick="func()">ADD</button><button style="width: 85px;" id="del">DELETE</button></td>
+        </tr>
+        <tr><td><label id="change">welcome</label></td></tr>
+        </form>
+    </table>
+    </center>
+    
+    <script src="dbms.js"></script>
+</body>
+</html>
